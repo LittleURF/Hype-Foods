@@ -32,8 +32,19 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   color: var(--white);
+}
+
+.text--small {
+  font-size: 1.6em;
+  padding: 5px;
 
 }
+.text--medium {
+  font-size: 2em;
+  line-height: 1.85em;
+  padding: 10px;
+}
+
 .grid {
 }
 .nav-bar {
@@ -131,11 +142,7 @@ body {
   color: var(--primary-yellow);
   margin-bottom: 20px;
 }
-.medium-text {
-  font-size: 2em;
-  line-height: 1.85em;
-  padding: 10px;
-}
+
 
 .header__text {
   text-align: center;
@@ -169,12 +176,12 @@ body {
 }
 
 .about-us {
-  height: 800px;
+  height: 1000px;
 }
 
 .headline-wrapper {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 40px;
 }
 
@@ -191,11 +198,45 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 160px;
 }
 
 .about-us__team {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team__person {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 350px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(184, 184, 184);
+  background-color: white;
+  align-items: center;
+}
+
+.person__photo {
+  width: 100%;
+}
+
+.person__name {
+  font-weight: 600;
+  font-size: 1.85em;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.person__profession {
+  font-weight: 600;
+}
+
+.person__quote {
+  padding: 4px 10px;
+  font-style: italic;
 }
 
 /* .header-main:before {
