@@ -45,6 +45,13 @@ body {
   padding: 10px;
 }
 
+.text--large {
+  color: var(--black);
+  font-size: 2.8em;
+  line-height: 2.1em;
+  padding: 10px;
+}
+
 .grid {
 }
 .nav-bar {
@@ -185,6 +192,12 @@ body {
   margin-bottom: 40px;
 }
 
+.headline-wrapper--small {
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
 .section__headline {
   display: inline;
   font-family: 'Oxygen';
@@ -198,7 +211,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 160px;
+  margin-bottom: 100px;
 }
 
 .about-us__team {
@@ -237,6 +250,12 @@ body {
 .person__quote {
   padding: 4px 10px;
   font-style: italic;
+}
+
+.team__headline {
+  display: inline;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-orange);
 }
 
 /* .header-main:before {
