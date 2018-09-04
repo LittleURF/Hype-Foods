@@ -65,7 +65,7 @@ body {
   height: 55px;
   background-color: rgba(255, 143, 0, 1);
   align-items: center;
-  z-index: 1;
+  z-index: 100;
 }
 
 .nav-bar__logo {
@@ -259,7 +259,6 @@ body {
 
 .offer {
   color: black;
-
   background-color: rgb(247, 247, 247);
 }
 
@@ -352,6 +351,11 @@ body {
   color: var(--black);
   padding: 4px 20px 15px 20px;
   font-style: italic;
+}
+
+.contact {
+  background-color: rgb(247, 247, 247);
+  height: 800px;
 }
 /* .header-main:before {
   content: "";
