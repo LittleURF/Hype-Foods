@@ -259,7 +259,7 @@ body {
 
 .offer {
   color: black;
-  height: 900px;
+
   background-color: rgb(247, 247, 247);
 }
 
@@ -271,6 +271,7 @@ body {
   grid-template-columns: repeat(2, minmax(500px, 1fr));
   grid-column-gap: 4%;
   grid-row-gap: 25px;
+  padding-bottom: 85px;
 }
 
 .offer__item {
@@ -279,9 +280,10 @@ body {
 }
 
 .offer__item__image {
-  width: 60%;
+  width: 61.5%;
   float: left;
   margin-right: 5px;
+  height: 100%;
   
 }
 
@@ -308,6 +310,38 @@ body {
   padding: 0;
 }
 
+
+.opinions {
+  height: 800px;
+}
+
+.carousel__item {
+
+}
+
+.carousel__image {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.carousel__name {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.carousel__name-wrapper {
+  position: absolute;
+  top:15%;
+  display: inline-block;
+  border-bottom: 2px solid var(--primary-orange);
+  width: 55%;
+  margin-left: 10px;
+}
+
+.carousel__quote {
+  color: var(--black);
+}
 /* .header-main:before {
   content: "";
   position: fixed;

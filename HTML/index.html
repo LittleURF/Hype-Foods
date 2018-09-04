@@ -4,6 +4,8 @@
   <title>Hype Foods</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
   <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -70,7 +72,7 @@
         <div class="offer__grid">
 
           <div class="offer__item">
-            <img class="offer__item__image" src="../IMAGES/HeaderBG2.jpeg">
+            <img class="offer__item__image" src="../IMAGES/low.jpg">
             <div class="headline-wrapper--small">
               <h4 class="offer__item__name small__headline text--medium">Low callory</h4>
             </div>
@@ -80,7 +82,7 @@
           </div>
 
           <div class="offer__item">
-            <img class="offer__item__image" src="../IMAGES/HeaderBG2.jpeg">
+            <img class="offer__item__image" src="../IMAGES/standard.jpg">
             <div class="headline-wrapper--small">
               <h4 class="offer__item__name small__headline text--medium">Standard callory</h4>
             </div>
@@ -89,7 +91,7 @@
           </div>
 
             <div class="offer__item">
-              <img class="offer__item__image" src="../IMAGES/HeaderBG2.jpeg">
+              <img class="offer__item__image" src="../IMAGES/standard2.jpg">
               <div class="headline-wrapper--small">
                 <h4 class="offer__item__name small__headline text--medium">High callory</h4>
               </div>
@@ -98,7 +100,7 @@
             </div>
 
             <div class="offer__item">
-              <img class="offer__item__image" src="../IMAGES/HeaderBG2.jpeg">
+              <img class="offer__item__image" src="../IMAGES/very high.jpg">
               <div class="headline-wrapper--small">
                 <h4 class="offer__item__name small__headline text--medium">Very high callory</h4>
               </div>
@@ -107,7 +109,44 @@
             </div>
         </div>
     </section>
+    <section class="opinions">
+      <div class="headline-wrapper">
+        <h2 class="section__headline">OPINIONS</h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="carousel__item">
+          <img class="carousel__image" src="../IMAGES/Person2.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Marcin Tarski</span>
+          </div>
+          <p class="carousel__quote text--medium" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias at officiis itaque magni exercitationem earum beatae placeat. Sequi.</p>
+        </div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+      </div>
+    </section>
     </div>
 </body>
-
+<script src="../JAVASCRIPT/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    // center: true,
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 3,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+    }
+})
+</script>
 </html>
