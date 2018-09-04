@@ -316,12 +316,19 @@ body {
 }
 
 .carousel__item {
+  background-color: #eee;
+}
 
+.carousel__item__upper-part {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 20px;
+  align-items: center;
 }
 
 .carousel__image {
-  width: 25%;
-  height: 25%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -331,16 +338,18 @@ body {
 }
 
 .carousel__name-wrapper {
-  position: absolute;
-  top:15%;
   display: inline-block;
-  border-bottom: 2px solid var(--primary-orange);
-  width: 55%;
+  border-bottom: 2px solid var(--primary-yellow);
+  width: 65%;
   margin-left: 10px;
 }
 
 .carousel__quote {
+  font-size: 1.8em;
+  line-height: 1.7em;
   color: var(--black);
+  padding: 4px 20px 15px 20px;
+  font-style: italic;
 }
 /* .header-main:before {
   content: "";
