@@ -293,10 +293,6 @@ body {
   margin-left: 5px;
 }
 
-.offer__item__name {
-
-}
-
 .offer__item__callories {
   display: table;
   content: '';
@@ -310,11 +306,17 @@ body {
   padding: 0;
 }
 
-
-.opinions {
-  height: 800px;
+.opinions__text {
+  text-align: center;
+  color: var(--black);
+  width: 50%;
+  margin: 0 auto;
 }
 
+.owl-carousel {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
 .carousel__item {
   background-color: #eee;
 }
