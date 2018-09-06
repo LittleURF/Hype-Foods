@@ -15,7 +15,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 :root {
@@ -357,19 +356,30 @@ body {
   background-color: rgb(247, 247, 247);
   height: 800px;
 }
-/* .header-main:before {
-  content: "";
-  position: fixed;
-  left: -5%;
-  right: 0%;
-  top: -5%;
-  z-index: -1;
 
-  display: block;
-  background-image: url(../IMAGES/HeaderBG2.jpeg);
-  background-size:cover;
-  width: 110%;
-  height: 110%;
+.contact__content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.map {
+  flex-basis: 60%;
+  height: 400px;
+  background-color: rgb(233, 144, 144);
+  
+}
 
-  filter: blur(0px);
-} */
+.contact__info {
+  color: var(--black);
+  flex-basis: 25%;
+  border-radius: 3px;
+}
+
+.contact__name {
+  font-family: var(--headlines-font);
+  font-size: 4.6em;
+  padding: 0px 10px 15px 10px;
+  line-height: initial;
+}

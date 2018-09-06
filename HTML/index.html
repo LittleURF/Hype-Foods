@@ -113,7 +113,7 @@
       <div class="headline-wrapper">
         <h2 class="section__headline">OPINIONS</h2>
       </div>
-      <p class="opinions__text text--medium">Through 7 years of service our business collected lots of reviews with an average rating of 4.8/5! Come and see why our clients love us so much!</p>
+      <p class="opinions__text text--medium">Through 7 years of service our business collected lots of reviews with an average rating of 4.7 / 5! Come and see why our clients love us so much!</p>
       <div class="owl-carousel owl-theme">
         <div class="carousel__item">
           <div class="carousel__item__upper-part">
@@ -146,7 +146,7 @@
                 <div class="carousel__item__upper-part">
                     <img class="carousel__image" src="../IMAGES/Opinion4.jpeg">
                     <div class="carousel__name-wrapper">
-                      <span class="carousel__name text--medium">Łukasz Nicki</span>
+                      <span class="carousel__name text--medium">Łukasz Karczyński</span>
                     </div>
                 </div>
                 <p class="carousel__quote">I can always rate Hype Foods with an exceptional score. I have used their services since 2014, and as you can see I can't get enough of them! The services they provide are always professional and the food outstanding. Thank you for always providing me with a tasty and healty diet!</p>
@@ -175,6 +175,20 @@
         <div class="headline-wrapper">
           <h2 class="section__headline">CONTACT</h2>
         </div>
+        <div class="contact__content-wrapper">
+          <div class="map"></div>
+          <div class="contact__info">
+            <span class="contact__name">Hype Foods!</span>
+            <p class="text--medium">
+                <b>Phone number:</b> 509 419 352
+                <br>
+                <b>Address:</b> 47 Złota St,  Warszawa 04-502
+                <br>
+                <b>E-mail:</b> hype.foods@gmail.com
+            </p>
+          </div>
+        </div>
+
     </section>
     </div>
 </body>
@@ -199,4 +213,15 @@ $('.owl-carousel').owlCarousel({
     }
 })
 </script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
 </html>
