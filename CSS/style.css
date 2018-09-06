@@ -153,6 +153,7 @@ body {
 
 .header__text {
   text-align: center;
+  color: hsl(23, 39%, 96%);
 }
 
 .btn {
@@ -200,6 +201,7 @@ body {
   color: var(--black);
   font-size: 6.7em;
   border-bottom: 10px solid var(--primary-orange);
+  letter-spacing: 8.4px;
 }
 
 .about-us__text {
@@ -273,9 +275,9 @@ body {
 }
 
 .offer__item {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(242, 242, 242);
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.4);
 }
 
 .offer__item__image {
@@ -319,8 +321,8 @@ body {
 }
 .carousel__item {
   background-color: #eee;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  margin-bottom: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.4);
+  margin-bottom: 3px;
   margin-top: 2px;
 }
 
@@ -399,7 +401,7 @@ body {
   background-color: rgba(80, 80, 80, 0.055);
   padding: 10px;
   border-radius: 3px;
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 5px 0px rgba(138,138,138,1);
 }
 
 .contact__form > * {
