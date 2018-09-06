@@ -176,7 +176,7 @@
           <h2 class="section__headline">CONTACT</h2>
         </div>
         <div class="contact__content-wrapper">
-          <div class="map"></div>
+          <div id="map"></div>
           <div class="contact__info">
             <span class="contact__name">Hype Foods!</span>
             <p class="text--medium">
@@ -222,14 +222,16 @@ $('.owl-carousel').owlCarousel({
 })
 </script>
     <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+function initMap() {
+  var location = {lat: 52.192357, lng: 21.025664};
+    var mapOptions = {
+        center: location,
+        zoom: 16,
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+var marker = new google.maps.Marker({position: location, map: map});
+}
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxldAFRuUo7Bx74OJED1fC1GN4TdD3p9c&callback=initMap"
     async defer></script>
 </html>

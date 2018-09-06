@@ -354,7 +354,7 @@ body {
 
 .contact {
   background-color: rgb(247, 247, 247);
-  height: 1100px;
+  height: 800px;
 }
 
 .contact__content-wrapper {
@@ -364,10 +364,11 @@ body {
   margin: 0 auto;
   padding-top: 60px;
 }
-.map {
+
+#map {
   flex-basis: 55%;
   background-color: rgb(12, 141, 8);
-  
+
 }
 
 .contact__info {
