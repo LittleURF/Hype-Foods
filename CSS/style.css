@@ -231,9 +231,9 @@ body {
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 15px;
-  border: 1px solid rgb(184, 184, 184);
   background-color: white;
   align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .person__photo {
@@ -275,6 +275,7 @@ body {
 .offer__item {
   background-color: rgb(238, 238, 238);
   border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .offer__item__image {
@@ -314,9 +315,13 @@ body {
 .owl-carousel {
   padding-top: 150px;
   padding-bottom: 80px;
+
 }
 .carousel__item {
   background-color: #eee;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 .carousel__item__upper-part {
@@ -360,7 +365,7 @@ body {
 .contact__content-wrapper {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -368,7 +373,8 @@ body {
 #map {
   flex-basis: 55%;
   background-color: rgb(12, 141, 8);
-
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .contact__info {
@@ -386,7 +392,6 @@ body {
 
 .contact__form {
   display: flex;
-  max-width: 600px;
   margin: 0 auto;
   margin-top: 10px;
   flex-wrap: wrap;
@@ -394,7 +399,7 @@ body {
   background-color: rgba(80, 80, 80, 0.055);
   padding: 10px;
   border-radius: 3px;
-
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .contact__form > * {
@@ -439,6 +444,4 @@ body {
 
 .form__submit-button:hover {
   color: var(--primary-orange);
-
-
 }
