@@ -18,7 +18,14 @@
   <nav class="nav-bar">
     <div class="nav-bar__content">
         <a class="nav-bar__logo" href="index.html">Hype Foods!</a>
-        <label class="hamburger__label" for="hamburger__toggle">&#9776;</label>
+        <label class="hamburger__label" for="hamburger__toggle">
+          <div id="hamburger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
         <input type="checkbox" id="hamburger__toggle">
         <ul class="nav-bar__list">
           <li class="nav-bar__item"><a class="nav-bar__link" href="#">Home</a></li>
@@ -248,6 +255,27 @@
       },
     }
   })
+</script>
+<script>
+  $(document).ready(function(){
+	$('#hamburger__icon').click(function(){
+		$(this).toggleClass('open');
+	});
+}); // Hamburger icon
+
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+         $('.nav-bar').css({"background-color": "rgb(255,143,0)"})
+      }
+      if ($(this).scrollTop() < 50) {
+        $('.nav-bar').css({"background-color": "rgba(0,0,0,0)"})
+      }
+   });
+});
+</script>
+<script>
+
 </script>
 <script>
   function initMap() {
