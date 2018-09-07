@@ -1,237 +1,282 @@
 <!DOCTYPE html>
 <html lang="en-EN">
+
 <head>
   <title>Hype Foods</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
   <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 </head>
+
 <body>
-  <div class="grid">
-    <!-- Make nav bar transparent for the very first screen, add BG after a short scroll -->
-    <nav class="nav-bar">
-      <a class="nav-bar__logo" href="index.html">Hype Foods!</a>
-      <ul class="nav-bar__list">
-        <li class="nav-bar__item"><a class="nav-bar__link" href="#">Home</a></li>
-        <li class="nav-bar__item"><a class="nav-bar__link" href="#">About us</a></li>
-        <li class="nav-bar__item"><a class="nav-bar__link" href="#">Offer</a></li>
-        <li class="nav-bar__item"><a class="nav-bar__link" href="#">Opinions</a></li>
-        <li class="nav-bar__item"><a class="nav-bar__link" href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <header class="header-main">
+  <!-- Make nav bar transparent for the very first screen, add BG after a short scroll -->
+  <nav class="nav-bar">
+    <div class="nav-bar__content">
+        <a class="nav-bar__logo" href="index.html">Hype Foods!</a>
+        <label class="hamburger__label" for="hamburger__toggle">&#9776;</label>
+        <input type="checkbox" id="hamburger__toggle">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Home</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href="#">About us</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Offer</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Opinions</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+  <header class="header-main">
     <div class="header-content">
-       <!-- put in the middle in a black background transparent box? -->
       <h1 class="header__name">Hype Foods!</h1>
-      <p class="header__text text--medium">We provide original, comprehensive catering services that stimulate the senses of the most refined consumers in every aspect, pleasing the eye and the palate. We’re here to support your ideas with our knowledge and experience, always taking individual needs and suggestions into account.</p>
+      <p class="header__text text--medium">We provide original, comprehensive catering services that stimulate the
+        senses of the most refined consumers in every aspect, pleasing the eye and the palate. We’re here to support
+        your ideas with our knowledge and experience, always taking individual needs and suggestions into account.</p>
       <button class="btn header__scroll-button">Show me more!</button>
     </div>
-    </header>
-    <section class="about-us">
-      <div class="headline-wrapper">
-        <h2 class="section__headline">ABOUT US</h2>
-      </div>
-      <p class="about-us__text text--medium">Hype Foods has been in business for 7 years. We fulfill distinct needs with excitement and creativity, the finest quality ingredients, and flawless elegance. We pride ourselves with providing you with the absolute best service. You can sit back and relax and let our professional chefs take care of all the work</p>
-      <div class="headline-wrapper--small">
-        <h3 class="small__headline text--large">Meet our chefs!</h3>
-      </div>
-      <div class="about-us__team">
-
-        <div class="team__person">
-          <img class="person__photo" src="../IMAGES/Person1.jpg">
-          <span class="person__name text--small">Bartosz Wróbel, 28</span>
-          <span class="person__profession text--small">Main Chef - 4 years experience</span>
-          <p class="person__quote text--small">Food is actually pretty good if you eat it. That's why I became a chef.</p>
-        </div>
-
-        <div class="team__person">
-          <img class="person__photo" src="../IMAGES/Person2.jpeg">
-          <span class="person__name text--small">Adrian Tarkowski, 36</span>
-          <span class="person__profession text--small">Main Chef - 9 years experience</span>
-          <p class="person__quote text--small">One day i made a peperonni pizza and my passion for food started growing like crazy, it do be like that sometimes.</p>
-        </div>
-
-        <div class="team__person">
-          <img class="person__photo" src="../IMAGES/Person3.jpg">
-          <span class="person__name text--small">Hubert Reszczyński, 28</span>
-          <span class="person__profession text--small">Main Chef - 5 years experience</span>
-          <p class="person__quote text--small">The most important thing in the kitchen is the food, you know?</p>
-        </div>
-
-      </div>
-    </section>
-    <section class="offer">
-        <div class="headline-wrapper">
-          <h2 class="section__headline">OFFER</h2>
-        </div>
-        <div class="offer__grid">
-
-          <div class="offer__item">
-            <img class="offer__item__image" src="../IMAGES/low.jpg">
-            <div class="headline-wrapper--small">
-              <h4 class="offer__item__name small__headline text--medium">Low callory</h4>
-            </div>
-
-            <span class="offer__item__callories text--small">1500 kcal</span>
-            <p class="offer__item__description text--small">Created specifically for people looking to lose weight but still eat great and tasty food!</p>
-          </div>
-
-          <div class="offer__item">
-            <img class="offer__item__image" src="../IMAGES/standard.jpg">
-            <div class="headline-wrapper--small">
-              <h4 class="offer__item__name small__headline text--medium">Standard callory</h4>
-            </div>
-            <span class="offer__item__callories text--small">2000 kcal</span>
-            <p class="offer__item__description text--small">Created specifically for people looking to lose weight but still eat great and tasty food!</p>
-          </div>
-
-            <div class="offer__item">
-              <img class="offer__item__image" src="../IMAGES/standard2.jpg">
-              <div class="headline-wrapper--small">
-                <h4 class="offer__item__name small__headline text--medium">High callory</h4>
-              </div>
-              <span class="offer__item__callories text--small">2500 kcal</span>
-              <p class="offer__item__description text--small">Created specifically for people looking to lose weight but still eat great and tasty food!</p>
-            </div>
-
-            <div class="offer__item">
-              <img class="offer__item__image" src="../IMAGES/very high.jpg">
-              <div class="headline-wrapper--small">
-                <h4 class="offer__item__name small__headline text--medium">Very high callory</h4>
-              </div>
-              <span class="offer__item__callories text--small">3000 kcal</span>
-              <p class="offer__item__description text--small">Created specifically for people looking to lose weight but still eat great and tasty food!</p>
-            </div>
-        </div>
-    </section>
-    <section class="opinions">
-      <div class="headline-wrapper">
-        <h2 class="section__headline">OPINIONS</h2>
-      </div>
-      <p class="opinions__text text--medium">Through 7 years of service our business collected lots of reviews with an average rating of 4.7 / 5! Come and see why our clients love us so much!</p>
-      <div class="owl-carousel owl-theme">
-        <div class="carousel__item">
-          <div class="carousel__item__upper-part">
-              <img class="carousel__image" src="../IMAGES/Opinion1.jpeg">
-              <div class="carousel__name-wrapper">
-                <span class="carousel__name text--medium">Marcin Tarski</span>
-              </div>
-          </div>
-          <p class="carousel__quote">I can always rate Hype Foods with an exceptional score. I have used their services since 2014, and as you can see I can't get enough of them! The services they provide are always professional and the food outstanding. Thank you for always providing me with a tasty and healty diet!</p>
-        </div>
-        <div class="carousel__item">
-            <div class="carousel__item__upper-part">
-                <img class="carousel__image" src="../IMAGES/Opinion2.jpeg">
-                <div class="carousel__name-wrapper">
-                  <span class="carousel__name text--medium">Agata Sauć</span>
-                </div>
-            </div>
-            <p class="carousel__quote">Hype Foods provides outstanding service to their customers in a timely, efficient manner. I truly don’t know what I would do without them. Thanks to them, I am able to provide my office and employees with a wonderful and delicious meal each and every time. They work with you to make sure your event is the best it can be. The employees who deliver the food are professional, kind, and always willing to go above and beyond what the job entails. Thank you Hype Foods!</p>
-          </div>
-          <div class="carousel__item">
-              <div class="carousel__item__upper-part">
-                  <img class="carousel__image" src="../IMAGES/Opinion3.jpeg">
-                  <div class="carousel__name-wrapper">
-                    <span class="carousel__name text--medium">Remigiusz Wleklak</span>
-                  </div>
-              </div>
-              <p class="carousel__quote">Everything Hype Foods has provided has been the best! Thank you for always making me feel confident that I have the best professional catering organization in the area!</p>
-            </div>
-            <div class="carousel__item">
-                <div class="carousel__item__upper-part">
-                    <img class="carousel__image" src="../IMAGES/Opinion4.jpeg">
-                    <div class="carousel__name-wrapper">
-                      <span class="carousel__name text--medium">Łukasz Karczyński</span>
-                    </div>
-                </div>
-                <p class="carousel__quote">I can always rate Hype Foods with an exceptional score. I have used their services since 2014, and as you can see I can't get enough of them! The services they provide are always professional and the food outstanding. Thank you for always providing me with a tasty and healty diet!</p>
-              </div>
-              <div class="carousel__item">
-                  <div class="carousel__item__upper-part">
-                      <img class="carousel__image" src="../IMAGES/Opinion5.jpeg">
-                      <div class="carousel__name-wrapper">
-                        <span class="carousel__name text--medium">Julia Storczyk</span>
-                      </div>
-                  </div>
-                  <p class="carousel__quote">Hype Foods provides outstanding service to their customers in a timely, efficient manner. I truly don’t know what I would do without them. Thanks to them, I am able to provide my office and employees with a wonderful and delicious meal each and every time. They work with you to make sure your event is the best it can be. The employees who deliver the food are professional, kind, and always willing to go above and beyond what the job entails. Thank you Hype Foods!</p>
-                </div>
-                <div class="carousel__item">
-                    <div class="carousel__item__upper-part">
-                        <img class="carousel__image" src="../IMAGES/Opinion6.jpeg">
-                        <div class="carousel__name-wrapper">
-                          <span class="carousel__name text--medium">Jakub Stokowski</span>
-                        </div>
-                    </div>
-                    <p class="carousel__quote">Everything Hype Foods has provided has been the best! Thank you for always making me feel confident that I have the best professional catering organization in the area!</p>
-                  </div>
-      </div>
-    </section>
-    <section class="contact">
-        <div class="headline-wrapper">
-          <h2 class="section__headline">CONTACT</h2>
-        </div>
-        <div class="contact__content-wrapper">
-          <div id="map"></div>
-          <div class="contact__info">
-            <span class="contact__name">Hype Foods!</span>
-            <p class="text--medium">
-                <b>Phone number:</b> 509 419 352
-                <br>
-                <b>Address:</b> 47 Złota St,  Warszawa 04-502
-                <br>
-                <b>E-mail:</b> hype.foods@gmail.com
-            </p>
-            <form class="contact__form" action="https://formspree.io/hubertzachlowski@gmail.com" method="POST">
-              <input class="input--small" type="text" name="your-name" placeholder="Name">
-              <input class="input--small" type="email" name="your-email" placeholder="E-mail">
-              <input class="input--big" type="text" name="_subject" placeholder="Subject"/>
-              <textarea name="your-message" placeholder="Message"></textarea>
-              <input class="btn form__submit-button" type="submit" value="Send">
-           </form>
-          </div>
-        </div>
-
-
-    </section>
+  </header>
+  <section class="about-us">
+    <div class="headline-wrapper">
+      <h2 class="section__headline">ABOUT US</h2>
     </div>
+    <p class="about-us__text text--medium">Hype Foods has been in business for 7 years. We fulfill distinct needs with
+      excitement and creativity, the finest quality ingredients, and flawless elegance. We pride ourselves with
+      providing you with the absolute best service. You can sit back and relax and let our professional chefs take care
+      of all the work</p>
+    <div class="headline-wrapper--small">
+      <h3 class="small__headline text--large">Meet our chefs!</h3>
+    </div>
+    <div class="about-us__team">
+
+      <div class="team__person">
+        <img class="person__photo" src="../IMAGES/Person1.jpg">
+        <span class="person__name text--small">Bartosz Wróbel, 28</span>
+        <span class="person__profession text--small">Main Chef - 4 years experience</span>
+        <p class="person__quote text--small">Food is actually pretty good if you eat it. That's why I became a chef.</p>
+      </div>
+
+      <div class="team__person">
+        <img class="person__photo" src="../IMAGES/Person2.jpeg">
+        <span class="person__name text--small">Adrian Tarkowski, 36</span>
+        <span class="person__profession text--small">Main Chef - 9 years experience</span>
+        <p class="person__quote text--small">One day i made a peperonni pizza and my passion for food started growing
+          like crazy, it do be like that sometimes.</p>
+      </div>
+
+      <div class="team__person">
+        <img class="person__photo" src="../IMAGES/Person3.jpg">
+        <span class="person__name text--small">Hubert Reszczyński, 28</span>
+        <span class="person__profession text--small">Main Chef - 5 years experience</span>
+        <p class="person__quote text--small">The most important thing in the kitchen is the food, you know?</p>
+      </div>
+
+    </div>
+  </section>
+  <section class="offer">
+    <div class="headline-wrapper">
+      <h2 class="section__headline">OFFER</h2>
+    </div>
+    <div class="offer__grid">
+
+      <div class="offer__item">
+        <img class="offer__item__image" src="../IMAGES/low.jpg">
+        <div class="headline-wrapper--small">
+          <h4 class="offer__item__name small__headline text--medium">Low callory</h4>
+        </div>
+
+        <span class="offer__item__callories text--small">1500 kcal</span>
+        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
+          still eat great and tasty food!</p>
+      </div>
+
+      <div class="offer__item">
+        <img class="offer__item__image" src="../IMAGES/standard.jpg">
+        <div class="headline-wrapper--small">
+          <h4 class="offer__item__name small__headline text--medium">Standard callory</h4>
+        </div>
+        <span class="offer__item__callories text--small">2000 kcal</span>
+        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
+          still eat great and tasty food!</p>
+      </div>
+
+      <div class="offer__item">
+        <img class="offer__item__image" src="../IMAGES/standard2.jpg">
+        <div class="headline-wrapper--small">
+          <h4 class="offer__item__name small__headline text--medium">High callory</h4>
+        </div>
+        <span class="offer__item__callories text--small">2500 kcal</span>
+        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
+          still eat great and tasty food!</p>
+      </div>
+
+      <div class="offer__item">
+        <img class="offer__item__image" src="../IMAGES/very high.jpg">
+        <div class="headline-wrapper--small">
+          <h4 class="offer__item__name small__headline text--medium">Very high callory</h4>
+        </div>
+        <span class="offer__item__callories text--small">3000 kcal</span>
+        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
+          still eat great and tasty food!</p>
+      </div>
+    </div>
+  </section>
+  <section class="opinions">
+    <div class="headline-wrapper">
+      <h2 class="section__headline">OPINIONS</h2>
+    </div>
+    <p class="opinions__text text--medium">Through 7 years of service our business collected lots of reviews with an
+      average rating of 4.7 / 5! Come and see why our clients love us so much!</p>
+    <div class="owl-carousel owl-theme">
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion1.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Marcin Tarski</span>
+          </div>
+        </div>
+        <p class="carousel__quote">I can always rate Hype Foods with an exceptional score. I have used their services
+          since 2014, and as you can see I can't get enough of them! The services they provide are always professional
+          and the food outstanding. Thank you for always providing me with a tasty and healty diet!</p>
+      </div>
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion2.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Agata Sauć</span>
+          </div>
+        </div>
+        <p class="carousel__quote">Hype Foods provides outstanding service to their customers in a timely, efficient
+          manner. I truly don’t know what I would do without them. Thanks to them, I am able to provide my office and
+          employees with a wonderful and delicious meal each and every time. They work with you to make sure your event
+          is the best it can be. The employees who deliver the food are professional, kind, and always willing to go
+          above and beyond what the job entails. Thank you Hype Foods!</p>
+      </div>
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion3.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Remigiusz Wleklak</span>
+          </div>
+        </div>
+        <p class="carousel__quote">Everything Hype Foods has provided has been the best! Thank you for always making me
+          feel confident that I have the best professional catering organization in the area!</p>
+      </div>
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion4.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Łukasz Karczyński</span>
+          </div>
+        </div>
+        <p class="carousel__quote">I can always rate Hype Foods with an exceptional score. I have used their services
+          since 2014, and as you can see I can't get enough of them! The services they provide are always professional
+          and the food outstanding. Thank you for always providing me with a tasty and healty diet!</p>
+      </div>
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion5.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Julia Storczyk</span>
+          </div>
+        </div>
+        <p class="carousel__quote">Hype Foods provides outstanding service to their customers in a timely, efficient
+          manner. I truly don’t know what I would do without them. Thanks to them, I am able to provide my office and
+          employees with a wonderful and delicious meal each and every time. They work with you to make sure your event
+          is the best it can be. The employees who deliver the food are professional, kind, and always willing to go
+          above and beyond what the job entails. Thank you Hype Foods!</p>
+      </div>
+      <div class="carousel__item">
+        <div class="carousel__item__upper-part">
+          <img class="carousel__image" src="../IMAGES/Opinion6.jpeg">
+          <div class="carousel__name-wrapper">
+            <span class="carousel__name text--medium">Jakub Stokowski</span>
+          </div>
+        </div>
+        <p class="carousel__quote">Everything Hype Foods has provided has been the best! Thank you for always making me
+          feel confident that I have the best professional catering organization in the area!</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="headline-wrapper">
+      <h2 class="section__headline">CONTACT</h2>
+    </div>
+    <div class="contact__content-wrapper">
+      <div id="map"></div>
+      <div class="contact__info">
+        <span class="contact__name">Hype Foods!</span>
+        <p class="text--medium">
+          <b>Phone number:</b> 509 419 352
+          <br>
+          <b>Address:</b> 47 Złota St, Warsaw 04-502
+          <br>
+          <b>E-mail:</b> hype.foods@gmail.com
+        </p>
+        <form class="contact__form" action="https://formspree.io/hubertzachlowski@gmail.com" method="POST">
+          <input class="input--small" type="text" name="your-name" placeholder="Name">
+          <input class="input--small" type="email" name="your-email" placeholder="E-mail">
+          <input class="input--big" type="text" name="_subject" placeholder="Subject" />
+          <textarea name="your-message" placeholder="Message"></textarea>
+          <input class="btn form__submit-button" type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+
+
+  </section>
 </body>
 <script src="../JAVASCRIPT/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
 <script src="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script>
-$('.owl-carousel').owlCarousel({
+  $('.owl-carousel').owlCarousel({
     // center: true,
-    loop:true,
-    margin:25,
+    loop: true,
+    margin: 25,
     items: 3,
-    responsive:{
-        0:{
-            items:1
-        },
-        1000:{
-            items:2
-        },
-        1250:{
-          items:3
-        },
+    responsive: {
+      0: {
+        items: 1
+      },
+      1000: {
+        items: 2
+      },
+      1250: {
+        items: 3
+      },
     }
-})
+  })
 </script>
-    <script>
-function initMap() {
-  var location = {lat: 52.192357, lng: 21.025664};
+<script>
+  function initMap() {
+    var location = {
+      lat: 52.192357,
+      lng: 21.025664
+    };
     var mapOptions = {
-        center: location,
-        zoom: 16,
-    }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-var marker = new google.maps.Marker({position: location, map: map});
-}
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxldAFRuUo7Bx74OJED1fC1GN4TdD3p9c&callback=initMap"
-    async defer></script>
+      center: location,
+      zoom: 16,
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxldAFRuUo7Bx74OJED1fC1GN4TdD3p9c&callback=initMap"
+  async defer></script>
+
 </html>
+
+<!--
+  TO DO
+
+ - Responsivness
+ - Add FB and other icons under contact info(?)
+ - Nav bar with transparent background at the start, back to normal after a scroll
+ - Animations on cards and maybe texts
+
+-->
