@@ -78,11 +78,6 @@ body {
   background-color: var(--black);
 }
 
-.nav-bar__link:active {
-  visibility: hidden;
-  opacity: 0;
-}
-
 #hamburger__icon {
   display: block;
   width: 60px;
@@ -511,7 +506,6 @@ body {
   border-radius: 20px;
 }
 
-
 .form__submit-button{
   background-color: rgb(46, 46, 46);
   color: white;
@@ -521,7 +515,6 @@ body {
 .form__submit-button:hover {
   color: var(--primary-orange);
 }
-
 
 @media only screen and (min-width: 768px) {
   .text--small {
@@ -584,8 +577,6 @@ body {
   transition: all 0.4s;
 }
 
-
-
 .offer__item {
   max-width: 800px;
 }
@@ -611,7 +602,6 @@ body {
   padding: 10px;
 }
 }
-
 
 @media only screen and (min-width: 1080px) {
 .header-main {
@@ -653,10 +643,10 @@ offer__item {
 .offer__item {
   justify-self: right;
 }
+
 .offer__item:nth-child(even) {
   justify-self: left;
 }
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -671,5 +661,4 @@ offer__item {
   .opinions__text {
     width: 55%;
   }
-
 }
