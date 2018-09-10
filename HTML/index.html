@@ -17,7 +17,7 @@
   <!-- Make nav bar transparent for the very first screen, add BG after a short scroll -->
   <nav class="nav-bar">
     <div class="nav-bar__content">
-        <a class="nav-bar__logo" href="index.html">Hype Foods!</a>
+        <a class="nav-bar__logo" href=".header-main">Hype Foods!</a>
         <label class="hamburger__label" for="hamburger__toggle">
           <div id="hamburger__icon">
             <span></span>
@@ -28,11 +28,11 @@
         </label>
         <input type="checkbox" id="hamburger__toggle">
         <ul class="nav-bar__list">
-          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Home</a></li>
-          <li class="nav-bar__item"><a class="nav-bar__link" href="#">About us</a></li>
-          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Offer</a></li>
-          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Opinions</a></li>
-          <li class="nav-bar__item"><a class="nav-bar__link" href="#">Contact</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href=".header-main">Home</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href=".about-us">About us</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href=".offer">Offer</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href=".opinions">Opinions</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link" href=".contact">Contact</a></li>
         </ul>
     </div>
   </nav>
@@ -91,7 +91,7 @@
       <div class="offer__item">
         <img class="offer__item__image" src="../IMAGES/low.jpg">
         <div class="headline-wrapper--small">
-          <h4 class="offer__item__name small__headline text--medium">Low callory</h4>
+          <h4 class="offer__item__name small__headline text--medium">Low calorie</h4>
         </div>
 
         <span class="offer__item__callories text--small">1500 kcal</span>
@@ -102,31 +102,28 @@
       <div class="offer__item">
         <img class="offer__item__image" src="../IMAGES/standard.jpg">
         <div class="headline-wrapper--small">
-          <h4 class="offer__item__name small__headline text--medium">Standard callory</h4>
+          <h4 class="offer__item__name small__headline text--medium">Standard calorie</h4>
         </div>
         <span class="offer__item__callories text--small">2000 kcal</span>
-        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
-          still eat great and tasty food!</p>
+        <p class="offer__item__description text--small">Standard set of dishes, great for your everyday needs!</p>
       </div>
 
       <div class="offer__item">
         <img class="offer__item__image" src="../IMAGES/standard2.jpg">
         <div class="headline-wrapper--small">
-          <h4 class="offer__item__name small__headline text--medium">High callory</h4>
+          <h4 class="offer__item__name small__headline text--medium">High calorie</h4>
         </div>
         <span class="offer__item__callories text--small">2500 kcal</span>
-        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
-          still eat great and tasty food!</p>
+        <p class="offer__item__description text--small">This option is great if You want to gain a little bit of weight with the best food you could imagine!</p>
       </div>
 
       <div class="offer__item">
         <img class="offer__item__image" src="../IMAGES/very high.jpg">
         <div class="headline-wrapper--small">
-          <h4 class="offer__item__name small__headline text--medium">Very high callory</h4>
+          <h4 class="offer__item__name small__headline text--medium">Very high calorie</h4>
         </div>
         <span class="offer__item__callories text--small">3000 kcal</span>
-        <p class="offer__item__description text--small">Created specifically for people looking to lose weight but
-          still eat great and tasty food!</p>
+        <p class="offer__item__description text--small">If you're physically training and want to gain a lot of mass, this pack is your best bet!</p>
       </div>
     </div>
   </section>
@@ -257,13 +254,15 @@
   })
 </script>
 <script>
+   // Hamburger icon
   $(document).ready(function(){
 	$('#hamburger__icon').click(function(){
 		$(this).toggleClass('open');
 	});
-}); // Hamburger icon
+});
 
 $(function() {
+  // Nav background appearing on scroll
    $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
          $('.nav-bar').css({"background-color": "rgb(255,143,0)"})
@@ -273,6 +272,33 @@ $(function() {
       }
    });
 });
+
+// Smooth scroll
+$("nav").find("a").click(function(e) {
+
+e.preventDefault();
+var section = $(this).attr("href");
+$("html, body").animate({
+    scrollTop: $(section).offset().top - 50
+}, 850);
+});
+
+$(".header__scroll-button").click(function() {
+
+$([document.documentElement, document.body]).animate({
+    scrollTop: $(".about-us").offset().top - 50
+}, 850);
+
+});
+
+  // Makes mobile NAV dissapear on an <a> click
+      var links = document.getElementsByClassName('nav-bar__item');
+  for(var i = 0; i < links.length; i++){
+    links[i].addEventListener('click', function(){
+      document.getElementById("hamburger__toggle").checked = false;
+      document.getElementById('hamburger__icon').classList.remove('open');
+    }, false);
+  }
 </script>
 <script>
 
@@ -301,10 +327,9 @@ $(function() {
 
 <!--
   TO DO
-
- - Responsivness
+ - Nav changed on long screens
  - Add FB and other icons under contact info(?)
- - Nav bar with transparent background at the start, back to normal after a scroll
  - Animations on cards and maybe texts
-
+ - Actually working links
+ - Make nav animation queue go the ff away
 -->

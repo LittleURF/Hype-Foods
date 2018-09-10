@@ -34,22 +34,22 @@ body {
 }
 
 .text--small {
-  font-size: 1.4em;
-  line-height: 1.35em;
+  font-size: 1.45em;
+  line-height: 1.4em;
   padding: 5px;
-
 }
+
 .text--medium {
-  font-size: 1.8em;
-  line-height: 1.65em;
-  padding: 7px;
+  font-size: 2em;
+  line-height: 1.85em;
+  padding: 10px;
 }
 
 .text--large {
+  font-size: 2.8em;
+  line-height: 2.1em;
+  padding: 10px;
   color: var(--black);
-  font-size: 2.5em;
-  line-height: 1.8em;
-  padding: 7px;
 }
 
 .nav-bar {
@@ -76,6 +76,11 @@ body {
   visibility: visible;
   opacity: 1;
   background-color: var(--black);
+}
+
+.nav-bar__link:active {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #hamburger__icon {
@@ -202,7 +207,7 @@ body {
 .header__name {
   font-family: var(--headlines-font);
   font-size: 12em;
-  margin-top: 35%;
+  margin-top: 10%;
   text-align: center;
   color: var(--primary-yellow);
   margin-bottom: 20px;
@@ -337,7 +342,7 @@ body {
 
 .offer__item {
   min-height: 170px;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(243, 243, 243);
   border-radius: 5px;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.4);
 }
@@ -348,7 +353,6 @@ body {
   float: left;
   margin-right: 5px;
   height: 100%;
-  
 }
 
 .offer__item:nth-child(even) > .offer__item__image {
@@ -367,6 +371,7 @@ body {
 .offer__item__description {
   text-align: center;
   padding: 0;
+  
 }
 
 .opinions__text {
@@ -519,6 +524,16 @@ body {
 
 
 @media only screen and (min-width: 768px) {
+  .text--small {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    padding: 5px;
+  }
+
+ .header__name {
+  margin-top: 35%;
+ }
+
  .hamburger__label {
    display: none;
  }
@@ -628,10 +643,33 @@ offer__item {
   height: 540px;
   margin-top: initial;
   order: 1;
-  flex-basis: 55%;
+  flex-basis: 45%;
 }
 
 .contact__info {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
+
+.offer__item {
+  justify-self: right;
+}
+.offer__item:nth-child(even) {
+  justify-self: left;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav-bar__content {
+    width: 70%;
+  }
+
+  .about-us__text {
+    width: 55%;
+  }
+
+  .opinions__text {
+    width: 55%;
+  }
+
 }
