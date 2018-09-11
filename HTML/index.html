@@ -307,8 +307,7 @@ $([document.documentElement, document.body]).animate({
  // All the fadeIn animations
  window.addEventListener('resize', animate);
 
- function animate(){0
- console.log('popped off');
+ function animate(){
     if(window.innerWidth >= 768){
     $('.js-wp-00').waypoint(function(direction) {
     $('.js-wp-00').addClass('animation fadeInUp');
@@ -376,6 +375,7 @@ $([document.documentElement, document.body]).animate({
   }
  }
  animate();
+
   // Makes mobile NAV dissapear on an <a> click
       var links = document.getElementsByClassName('nav-bar__item');
   for(var i = 0; i < links.length; i++){
@@ -385,9 +385,6 @@ $([document.documentElement, document.body]).animate({
     }, false);
   }
 
-
-</script>
-<script>
 
 </script>
 <script>
@@ -415,6 +412,5 @@ $([document.documentElement, document.body]).animate({
 <!--
   TO DO
  - Add FB and other icons under contact info(?)
- - Animations on cards and maybe texts
  - Make nav animation queue go the ff away
 -->
