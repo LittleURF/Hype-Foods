@@ -279,17 +279,10 @@ body {
   margin-bottom: 85px;
 }
 
-.js-wp-01, .js-wp-0, .js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4, .js-wp-5, .js-wp-6, .js-wp-7, .js-wp-8 {
-  opacity: 0;
-}
-.animation {
-  opacity: 1;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 50px, 0);
   }
 
   to {
@@ -306,7 +299,7 @@ body {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-7%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
   }
 
   to {
@@ -323,7 +316,7 @@ body {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translate3d(7%, 0, 0);
+    transform: translate3d(5%, 0, 0);
   }
 
   to {
@@ -575,6 +568,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .js-wp-00, .js-wp-0, .js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4, .js-wp-5, .js-wp-6, .js-wp-7, .js-wp-8 {
+    opacity: 0;
+  }
+  .animation {
+    opacity: 1;
+  }
+  
   .text--small {
     font-size: 1.6em;
     line-height: 1.5em;

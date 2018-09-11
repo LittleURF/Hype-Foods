@@ -37,7 +37,7 @@
     </div>
   </nav>
   <header class="header-main">
-    <div class="header-content js-wp-01">
+    <div class="header-content js-wp-00">
       <h1 class="header__name">Hype Foods!</h1>
       <p class="header__text text--medium">We provide original, comprehensive catering services that stimulate the
         senses of the most refined consumers in every aspect, pleasing the eye and the palate. We’re here to support
@@ -305,72 +305,77 @@ $([document.documentElement, document.body]).animate({
 
 });
  // All the fadeIn animations
- $('.js-wp-01').waypoint(function(direction) {
-    $('.js-wp-01').addClass('animation fadeInUp');
-  }, {
+ window.addEventListener('resize', animate);
+
+ function animate(){0
+ console.log('popped off');
+    if(window.innerWidth >= 768){
+    $('.js-wp-00').waypoint(function(direction) {
+    $('.js-wp-00').addClass('animation fadeInUp');
+    }, {
     offset: '90%'
-  });
+    });
+    $('.js-wp-0').waypoint(function(direction) {
+      $('.js-wp-0').addClass('animation fadeInUp');
+    }, {
+      offset: '90%'
+    });
 
+    $('.js-wp-1').waypoint(function(direction) {
+      $('.js-wp-1').addClass('animation fadeInUp');
+    }, {
+      offset: '90%'
+    });
 
-  $('.js-wp-0').waypoint(function(direction) {
-    $('.js-wp-0').addClass('animation fadeInUp');
-  }, {
-    offset: '90%'
-  });
+    
+    $('.js-wp-2').waypoint(function(direction) {
+      $('.js-wp-2').addClass('animation fadeInUp');
+    }, {
+      offset: '90%'
+    });
 
-   $('.js-wp-1').waypoint(function(direction) {
-    $('.js-wp-1').addClass('animation fadeInUp');
-  }, {
-    offset: '90%'
-  });
+    
+    $('.js-wp-3').waypoint(function(direction) {
+      $('.js-wp-3').addClass('animation fadeInLeft');
+    }, {
+      offset: '90%'
+    });
 
-  
-  $('.js-wp-2').waypoint(function(direction) {
-    $('.js-wp-2').addClass('animation fadeInUp');
-  }, {
-    offset: '90%'
-  });
+    
+    $('.js-wp-4').waypoint(function(direction) {
+      $('.js-wp-4').addClass('animation fadeInUp');
+    }, {
+      offset: '90%'
+    });
 
-  
-  $('.js-wp-3').waypoint(function(direction) {
-    $('.js-wp-3').addClass('animation fadeInLeft');
-  }, {
-    offset: '90%'
-  });
+    $('.js-wp-5').waypoint(function(direction) {
+      $('.js-wp-5').addClass('animation fadeInUp');
+    }, {
+      offset: '80%'
+    });
 
-  
-  $('.js-wp-4').waypoint(function(direction) {
-    $('.js-wp-4').addClass('animation fadeInUp');
-  }, {
-    offset: '90%'
-  });
+      $('.js-wp-6').waypoint(function(direction) {
+      $('.js-wp-6').addClass('animation fadeInUp');
+    }, {
+      offset: '90%'
+    });
 
-  $('.js-wp-5').waypoint(function(direction) {
-    $('.js-wp-5').addClass('animation fadeInUp');
-  }, {
-    offset: '80%'
-  });
+    
+    $('.js-wp-7').waypoint(function(direction) {
+      $('.js-wp-7').addClass('animation fadeInLeft');
+    }, {
+      offset: '90%'
+    });
 
-    $('.js-wp-6').waypoint(function(direction) {
-    $('.js-wp-6').addClass('animation fadeInUp');
-  }, {
-    offset: '90%'
-  });
-
-  
-  $('.js-wp-7').waypoint(function(direction) {
-    $('.js-wp-7').addClass('animation fadeInLeft');
-  }, {
-    offset: '90%'
-  });
-
-  
-  $('.js-wp-8').waypoint(function(direction) {
-    $('.js-wp-8').addClass('animation fadeInRight');
-  }, {
-    offset: '90%'
-  });
-
+    
+    $('.js-wp-8').waypoint(function(direction) {
+      $('.js-wp-8').addClass('animation fadeInRight');
+    }, {
+      offset: '90%'
+    });
+  }
+ }
+ animate();
   // Makes mobile NAV dissapear on an <a> click
       var links = document.getElementsByClassName('nav-bar__item');
   for(var i = 0; i < links.length; i++){
