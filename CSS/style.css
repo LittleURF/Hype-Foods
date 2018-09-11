@@ -279,6 +279,49 @@ body {
   margin-bottom: 85px;
 }
 
+.js-wp-0, .js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4 {
+  opacity: 0;
+}
+.animation {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-7%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
 .small__headline {
   display: inline;
   font-weight: 600;
@@ -317,6 +360,7 @@ body {
   padding: 4px 10px;
   font-style: italic;
 }
+
 
 .offer {
   color: black;

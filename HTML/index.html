@@ -46,6 +46,7 @@
     </div>
   </header>
   <section class="about-us">
+    <div class="headline-text__animation js-wp-0">
     <div class="headline-wrapper">
       <h2 class="section__headline">ABOUT US</h2>
     </div>
@@ -53,6 +54,8 @@
       excitement and creativity, the finest quality ingredients, and flawless elegance. We pride ourselves with
       providing you with the absolute best service. You can sit back and relax and let our professional chefs take care
       of all the work</p>
+    </div>
+    <div class="about-us__team-animation js-wp-1">
     <div class="headline-wrapper--small">
       <h3 class="small__headline text--large">Meet our chefs!</h3>
     </div>
@@ -81,11 +84,15 @@
       </div>
 
     </div>
+  </div>
   </section>
   <section class="offer">
+      <div class="headline-text__animation js-wp-2">
     <div class="headline-wrapper">
       <h2 class="section__headline">OFFER</h2>
     </div>
+    </div>
+    <div class="about-us__team-animation js-wp-3">
     <div class="offer__grid">
 
       <div class="offer__item">
@@ -126,6 +133,7 @@
         <p class="offer__item__description text--small">If you're physically training and want to gain a lot of mass, this pack is your best bet!</p>
       </div>
     </div>
+  </div>
   </section>
   <section class="opinions">
     <div class="headline-wrapper">
@@ -234,6 +242,7 @@
 </body>
 <script src="../JAVASCRIPT/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
 <script src="../JAVASCRIPT/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="../JAVASCRIPT/jquery.waypoints.js"></script>
 <script>
   $('.owl-carousel').owlCarousel({
     // center: true,
@@ -291,6 +300,40 @@ $([document.documentElement, document.body]).animate({
 
 });
 
+  $('.js-wp-0').waypoint(function(direction) {
+    $('.js-wp-0').addClass('animation fadeInUp');
+  }, {
+    offset: '80%'
+  });
+
+   $('.js-wp-1').waypoint(function(direction) {
+    $('.js-wp-1').addClass('animation fadeInUp');
+  }, {
+    offset: '90%'
+  });
+
+  
+  $('.js-wp-2').waypoint(function(direction) {
+    $('.js-wp-2').addClass('animation fadeInUp');
+  }, {
+    offset: '90%'
+  });
+
+  
+  $('.js-wp-3').waypoint(function(direction) {
+    $('.js-wp-3').addClass('animation fadeInLeft');
+  }, {
+    offset: '90%'
+  });
+
+  
+  $('.js-wp-4').waypoint(function(direction) {
+    $('.js-wp-4').addClass('animation fadeInLeft');
+  }, {
+    offset: '80%'
+  });
+
+
   // Makes mobile NAV dissapear on an <a> click
       var links = document.getElementsByClassName('nav-bar__item');
   for(var i = 0; i < links.length; i++){
@@ -299,6 +342,8 @@ $([document.documentElement, document.body]).animate({
       document.getElementById('hamburger__icon').classList.remove('open');
     }, false);
   }
+
+
 </script>
 <script>
 
