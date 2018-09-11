@@ -279,7 +279,7 @@ body {
   margin-bottom: 85px;
 }
 
-.js-wp-0, .js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4 {
+.js-wp-01, .js-wp-0, .js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4, .js-wp-5, .js-wp-6, .js-wp-7, .js-wp-8 {
   opacity: 0;
 }
 .animation {
@@ -299,7 +299,6 @@ body {
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   animation-duration: 1s;
 }
@@ -312,14 +311,29 @@ body {
 
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(7%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
   animation-duration: 1s;
 }
 .small__headline {
