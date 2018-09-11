@@ -280,30 +280,34 @@
 $(function() {
   // Nav background appearing on scroll
    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-         $('.nav-bar').css({"background-color": "rgb(255,143,0)"})
+      if ($(this).scrollTop() > $(window).height() - 50) {
+         $('.nav-bar').css({"background-color": "rgba(50, 50, 50, 0.9)", "box-shadow": "0px 2px 3px 0px rgba(0,0,0,0.4)"})
       }
-      if ($(this).scrollTop() < 50) {
-        $('.nav-bar').css({"background-color": "rgba(0,0,0,0)"})
+      if ($(this).scrollTop() < $(window).height() - 50) {
+        $('.nav-bar').css({"background-color": "rgba(0,0,0,0)", "box-shadow": "none"})
       }
    });
 });
+  // Ensures that the nav background is gonna have the right color after a refresh, not only after a scroll
+  if ($(this).scrollTop() > $(window).height() - 50) {
+    $('.nav-bar').css({"background-color": "rgba(50, 50, 50, 0.9)", "box-shadow": "0px 2px 3px 0px rgba(0,0,0,0.4)"})
+  }
 
 // Smooth scroll
 $("nav").find("a").click(function(e) {
 
-e.preventDefault();
-var section = $(this).attr("href");
-$("html, body").animate({
-    scrollTop: $(section).offset().top - 50
-}, 850);
+  e.preventDefault();
+  var section = $(this).attr("href");
+  $("html, body").animate({
+      scrollTop: $(section).offset().top - 49
+  }, 850);
 });
 
 $(".header__scroll-button").click(function() {
 
-$([document.documentElement, document.body]).animate({
-    scrollTop: $(".about-us").offset().top - 50
-}, 850);
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".about-us").offset().top - 49
+  }, 850);
 
 });
  // All the fadeIn animations
