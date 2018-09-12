@@ -64,7 +64,7 @@ body {
 .nav-bar__content {
   width: 100%;
   margin: 0 auto;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 #hamburger__toggle {
@@ -150,6 +150,7 @@ body {
   width: 100%;
   visibility: hidden;
   opacity: 0;
+  margin-top: -3px;
   transition: all 0.25s ease-in-out;
 }
 
@@ -599,6 +600,7 @@ body {
   visibility: visible;
   opacity: 1;
   width: initial;
+  margin-top: 0;
   border: none;
  }
 
