@@ -34,20 +34,20 @@ body {
 }
 
 .text--small {
-  font-size: 1.45em;
+  font-size: 1.35em;
   line-height: 1.5em;
   padding: 5px;
 }
 
 .text--medium {
-  font-size: 2em;
-  line-height: 1.85em;
-  padding: 10px;
+  font-size: 1.82em;
+  line-height: 1.75em;
+  padding: 9px;
 }
 
 .text--large {
-  font-size: 2.8em;
-  line-height: 2.1em;
+  font-size: 2.45em;
+  line-height: 1.9em;
   padding: 10px;
   color: var(--black);
 }
@@ -753,19 +753,19 @@ body {
 }
 
 .text--small {
-  font-size: 1.55em;
-  line-height: 1.55em;
+  font-size: 1.6em;
+  line-height: 1.6em;
   padding: 5px;
 
 }
 .text--medium {
-  font-size: 1.9em;
-  line-height: 1.78em;
-  padding: 9px;
+  font-size: 2em;
+  line-height: 1.85em;
+  padding: 10px;
 }
 
 .text--large {
-  font-size: 2.7em;
+  font-size: 2.8em;
   line-height: 2.1em;
   padding: 10px;
 }
