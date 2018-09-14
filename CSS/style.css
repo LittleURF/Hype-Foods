@@ -315,7 +315,7 @@ body {
 }
 
 .person__quote {
-  padding: 4px 10px;
+  padding: 4px 20px;
   font-style: italic;
 }
 
@@ -765,6 +765,10 @@ body {
   line-height: 2.1em;
   padding: 10px;
 }
+.person__quote {
+  padding: 8px 15px;
+  font-style: italic;
+}
 }
 
 @media only screen and (min-width: 1080px) {
@@ -774,6 +778,7 @@ body {
 
   grid-template-columns: 1fr 1fr;
 } 
+
 
 .offer__item__info {
   margin-top: 2%;
