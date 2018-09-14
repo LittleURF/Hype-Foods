@@ -295,6 +295,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 350px;
+  margin-top: 10px;
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 15px;
@@ -696,6 +697,7 @@ body {
   float: right;
   visibility: visible;
   opacity: 1;
+  display: initial;
   width: initial;
   margin-top: 0;
   border: none;
